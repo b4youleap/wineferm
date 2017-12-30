@@ -33,7 +33,7 @@ import os
 # ###
 # ###BAM### changed to hardcoded call for MVP ###BAM###
 # ###
-# ### TODO: Add config file with parameters
+# ###TODO: Add config file with parameters
 # ###
 # sensor_args = { '11': Adafruit_DHT.DHT11,
 #                '22': Adafruit_DHT.DHT22,
@@ -49,7 +49,7 @@ import os
 # Try to grab a sensor reading.  Use the read_retry method which will retry up
 # to 15 times to get a sensor reading (waiting 2 seconds between each retry).
 # humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
-humidity, temperature = Adafruit_DHT.read_retry(Adafruit_DHT.DHT11, 22)
+# humidity, temperature = Adafruit_DHT.read_retry(Adafruit_DHT.DHT11, 22)
 # Un-comment the line below to convert the temperature to Fahrenheit.
 # temperature = temperature * 9/5.0 + 32
 
@@ -61,14 +61,19 @@ humidity, temperature = Adafruit_DHT.read_retry(Adafruit_DHT.DHT11, 22)
 # ###BAM### Added infinite loop, aio.send, and call to codesend ###BAM###
 # ###
 while True:
+    humidity, temperature = Adafruit_DHT.read_retry(Adafruit_DHT.DHT11, 22)
     if humidity is not None and temperature is not None:
         print('Temp={0:0.1f}*  Humidity={1:0.1f}%'.format(temperature, humidity))
         aio.send('chambertemperature', temperature)
         aio.send('chamberhumidity', humidity)
-        if temperature < 20:
+        if temperature < 24:
+            # replace the parameters of codesend below to match your discoveries
             os.system('/var/www/rfoutlet/codesend 5555555 -l 177 -p 0')
+            # switches power on to start the cooling cycle
         else:
+            # replace the parameters of codesend below to match your discoveries
             os.system('/var/www/rfoutlet/codesend 5551212 -l 177 -p 0')
+            # switches power off to stop the cooling cycle
         time.sleep(60)
     else:
         print('Failed to get reading. Try again!')
