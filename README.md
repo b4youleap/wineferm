@@ -9,6 +9,7 @@ Initial approach: Poll a temperature sensor once per minute and send an off or o
 
 ### Constraints
 * Make no modifications to the kegerator that would prevent its use as originally intended. (There may still be a reason to buy a keg!)
+* No modifications to the standard winemaking equipment.
 
 ### Assumptions
 * Close enough is good enough: The instructions (for the Malbec) specify a temperature range of 22 - 24 degrees Celsius, and I assume the kegerator can maintain that enough of the time with the exceptions being during cooling cycles. The placement of the temperature sensor in the vertical middle in combination with the polling frequency will result in some over-cooling of the liquid but will not be detrimental to the fermentation process.
@@ -20,7 +21,7 @@ Initial approach: Poll a temperature sensor once per minute and send an off or o
 * Winemaking equipment (bucket, carboy, thief, etc)
 * Raspberry Pi
 * 2-DHT11 sensors
-* 433Mhz transmitter
+* SMAKN® 433Mhz Rf Transmitter and Receiver Link Kit for Arduino/Arm/McU
 * Etekcity ZAP 5LX Remote outlet switches
 
 ## References / Useful Links
@@ -41,4 +42,9 @@ Note: You won't see any code testing here until later in the project, as I start
 #### Temperature Fluctuation Tests
 As the interior environment stabilizes and the primary fermenter (bucket) gets within range I expect longer periods of time at stable temperatures.
 1. My first test was with a cup of boiling water and it made me realize that I end up with about a 4 degree overcooling. I set my cutoff at 22 and temps hit a low of 18 from the cooling cycle. The kegerator kicked on for 3 minutes before shutting off so I will adjust the code to look for < 24 so I can be closer to the range. 
-2. My next test is to fill the primary fermenter with water to 6 liters, and place it in the kegerator with the lid and airlock as I will at the end of the first stage of production.  I suspect the difference of mass between a cup of water and 6 liters of water will give me different results but I will post them tomorrow (12/31)
+2. My next test is to fill the primary fermenter with water to 6 liters, and place it in the kegerator with the lid and airlock as I will at the end of the first stage of production.  I suspect the difference of mass between a cup of water and 6 liters of water will give me different results but I will post them tomorrow (12/31) **UPDATE** The data from the test is in (added to the project as TemperatureTrial.xslx) and shows that once the mass reaches temperature it'll maintain it easily. I also had one of those paper fermometers typically included in the starter kits that showed the bucket temerature as 74 degrees when I checked it at the end of the trial. While this still does not provide the most accurate reading of the liquid itself it should be sufficient. Immersible temperature probes and food grade shrinkwrap is available which would require modifications to the lid of the primary fermenter and carboy. **New constraint:** No modifications to the winemaking equipment.
+
+Test #2 above is worth repeating in July when temps here in Phoenix are consistently closer to 110 F. but for now that's all the temperature testing to be done.
+
+## Wiring
+Coming soon.
