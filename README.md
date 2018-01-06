@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/b4youleap/wineferm.svg?branch=master)](https://travis-ci.org/b4youleap/wineferm)
 # Wine Fermentation Chamber Project
 This project turns a seldom used kegerator into a wine fermentation chamber! I will progressively improve this project from a minimum viable product (MVP) stage through to something hopefully fairly elegant and resilient.
 
