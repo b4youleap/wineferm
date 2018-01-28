@@ -33,7 +33,7 @@ Initial approach: Poll a temperature sensor once per minute and send an off or o
 * Data collection: [io.adafruit.com](https://io.adafruit.com/)
 
 ## Installation and Setup
-Documentation and pictures coming soon.
+Documentation and pictures coming soon. I bought a pack of 5 Etekcity switches and it's smart to find the on/off codes AND THE PULSE for all the switches and mark them accordingly. (Learn from my mistake!) The Tim Leland site above is helpful and I chose to call his codesend program to implement the Rf transmitter function. It was easier to do than I anticipated.
 
 ## Initial Testing
 Testing is an important part of every project, as had I not tested, I would not have known that I was NOT reading the sensor inside my infinite loop! I would have easily destroyed 6L of promising wine and wasted money. 
@@ -48,4 +48,13 @@ As the interior environment stabilizes and the primary fermenter (bucket) gets w
 Test #2 above is worth repeating in July when temps here in Phoenix are consistently closer to 110 F. but for now that's all the temperature testing to be done.
 
 ## Wiring
-Coming soon.
+Pi pin position 2 (5v) to DHT11 VCC
+Pi pin position 4 (5v) to Rf VCC
+Pi pin position 9 (GND) to Rf GND
+Pi pin position 11 (GPIO 17) to Rf "ATAD" -> hahaha... as printed - see photo
+Pi pin position 15 (GPIO 22) to DHT11 DAT
+Pi pin position 39 (GND) to DHT11 GND
+
+
+![Kegerator/Wine Fermentation Chamber](https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/images/winefermexterior.jpg)
+
