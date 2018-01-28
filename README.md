@@ -48,13 +48,13 @@ As the interior environment stabilizes and the primary fermenter (bucket) gets w
 Test #2 above is worth repeating in July when temps here in Phoenix are consistently closer to 110 F. but for now that's all the temperature testing to be done.
 
 ## Wiring
-Pi pin position 2 (5v) to DHT11 VCC
-Pi pin position 4 (5v) to Rf VCC
-Pi pin position 9 (GND) to Rf GND
-Pi pin position 11 (GPIO 17) to Rf "ATAD" -> hahaha... as printed - see photo
-Pi pin position 15 (GPIO 22) to DHT11 DAT
-Pi pin position 39 (GND) to DHT11 GND
+* Pi pin position 2 (5v) to DHT11 VCC
+* Pi pin position 4 (5v) to Rf VCC
+* Pi pin position 9 (GND) to Rf GND
+* Pi pin position 11 (GPIO 17) to Rf "ATAD" -> hahaha... as printed - see photo
+* Pi pin position 15 (GPIO 22) to DHT11 DAT
+* Pi pin position 39 (GND) to DHT11 GND
 
-
-![Kegerator/Wine Fermentation Chamber](https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/images/winefermexterior.jpg)
+## Photos
+[Kegerator/Wine Fermentation Chamber](https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/images/winefermexterior.jpg)
 
