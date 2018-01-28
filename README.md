@@ -56,5 +56,10 @@ Test #2 above is worth repeating in July when temps here in Phoenix are consiste
 * Pi pin position 39 (GND) to DHT11 GND
 
 ## Photos
-[Kegerator/Wine Fermentation Chamber](https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/images/winefermexterior.jpg)
-
+<p>Kegerator:</p>
+![Kegerator/Wine Fermentation Chamber](https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/images/winefermexterior.jpg)
+<p>Since the Kegerator Beer Tower was removable it is ideal for the access point for the temperature sensor. A fitting for a PVC single gang box provides some stability for the box and should limit the amount of cooling loss by blocking the opening. It will also provide the base needed for whatever future improvements I make to the overall setup.</p>
+[Single gang Pi](https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/images/winefermpibox.jpg)
+<p>The PVC single gang box also had a rear access point perfect for the Rf transmitter and power cable.<p>
+[Rf and Power](https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/images/winefermxmitter.jpg)
+[The Pi Zero W](https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/images/winefermpibrains.jpg)
