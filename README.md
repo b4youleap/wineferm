@@ -59,7 +59,12 @@ Test #2 above is worth repeating in July when temps here in Phoenix are consiste
 <p>Kegerator:</p>
 Kegerator/Wine Fermentation Chamber<img src="https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/images/winefermexterior.jpg">
 <p>Since the Kegerator Beer Tower was removable it is ideal for the access point for the temperature sensor. A fitting for a PVC single gang box provides some stability for the box and should limit the amount of cooling loss by blocking the opening. It will also provide the base needed for whatever future improvements I make to the overall setup.</p>
-[Single gang Pi](https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/images/winefermpibox.jpg)
+<img src="https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/images/winefermpibox.jpg">
 <p>The PVC single gang box also had a rear access point perfect for the Rf transmitter and power cable.<p>
-[Rf and Power](https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/images/winefermxmitter.jpg)
-[The Pi Zero W](https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/images/winefermpibrains.jpg)
+<img src="https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/images/winefermxmitter.jpg">
+The Pi Zero W
+<img src="https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/images/winefermpibrains.jpg">
+The Rf Transmitter (note "ATAD" printed on board hahaha...)
+<img src="https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/20180128_120023.jpg">
+The DHT11
+<img src="https://raw.githubusercontent.com/b4youleap/b4youleap.github.io/master/20180128_115914.jpg">
