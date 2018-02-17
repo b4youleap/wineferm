@@ -69,11 +69,11 @@ while True:
         if temperature < 24:
             # replace the parameters of codesend below to match your discoveries
             os.system('/var/www/rfoutlet/codesend 5555555 -l 177 -p 0')
-            # switches power on to start the cooling cycle
+            # switches power OFF - temperature at threshold
         else:
             # replace the parameters of codesend below to match your discoveries
             os.system('/var/www/rfoutlet/codesend 5551212 -l 177 -p 0')
-            # switches power off to stop the cooling cycle
+            # switches power ON to start the cooling cycle
         time.sleep(60)
     else:
         print('Failed to get reading. Try again!')
